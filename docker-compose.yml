@@ -1,0 +1,17 @@
+services:
+  app:
+    container_name: mahayoga-cards-microservice
+    build: .
+    image: mahayoga-cards-microservice-image
+    restart: unless-stopped
+    networks:
+      - database
+      - gateway
+
+networks:
+  database:
+    name: mahayoga-database-network
+    external: true
+  gateway:
+    name: mahayoga-gateway-network
+    external: true
