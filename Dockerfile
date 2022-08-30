@@ -15,4 +15,6 @@ COPY --from=builder /cards-microservice /cards-microservice
 
 EXPOSE 5300
 
+ENV TZ="Asia/Kolkata"
+
 ENTRYPOINT ["/cards-microservice"]
