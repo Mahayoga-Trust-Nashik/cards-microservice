@@ -6,8 +6,12 @@ services:
     restart: unless-stopped
     networks:
       - gateway
+      - database
 
 networks:
+  database:
+    name: mahayoga-database-network
+    external: true
   gateway:
     name: mahayoga-gateway-network
     external: true

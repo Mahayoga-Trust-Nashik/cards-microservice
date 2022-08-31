@@ -15,7 +15,7 @@ WORKDIR /
 
 COPY --from=builder /cards-microservice /cards-microservice
 
-ENV MYSQL_CONNECTION="multinlh_appdb_user:@ppdbu\$er2022@tcp(162.241.85.150:3306)/multinlh_appdb?charset=utf8mb4&parseTime=True&loc=Local"
+ENV MYSQL_CONNECTION="mahayoga_api:h7*Z537pdHjA@tcp(mahayoga-database:3306)/mahayoga_mobile?charset=utf8mb4&parseTime=True&loc=Local"
 
 EXPOSE 5300
 
